@@ -1,11 +1,4 @@
 # BrightLearnPracticals1
 
 
-  ----List all orders along with the customer name and product name.---
-  select A.orderid, A.customerid, A.productid,customername, productname,quantity,orderdate
-FROM 
-PRACTICALS.PRACTICALS_SCHEMA.ORDERS A
-INNER JOIN PRACTICALS.PRACTICALS_SCHEMA.CUSTOMER B
-ON A.customerid=B.customerid
-INNER JOIN PRACTICALS.PRACTICALS_SCHEMA.PRODUCTS C
-ON A.productid=C.productid;
+  
