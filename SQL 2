@@ -1,0 +1,10 @@
+Question: 
+Which customers have placed at least one order? 
+
+Answer
+SELECT A.customerid,A.orderid, B.customername,A. quantity, A.ORDERDATE,B.country
+FROM ORDERS AS A
+INNER JOIN CUSTOMER AS  B
+ON A.CUSTOMERID= B.CUSTOMERID
+
+WHERE A.quantity>1;
