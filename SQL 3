@@ -1,0 +1,9 @@
+List all customers and any orders they might have placed. Include customers who have 
+not placed any orders.
+
+SELECT* CUSTOMER A
+LEFT JOIN PRACTICALS.PRACTICALS_SCHEMA.ORDERS B
+on A.ORDERID= B.ORDERID;
+
+
+
