@@ -1,0 +1,6 @@
+Find all orders along with product details, including any products that might not have 
+been ordered.
+
+SELECT *  FROM ORDERS A
+RIGHT JOIN PRODUCTS B
+ON A.productid= b.productid;
