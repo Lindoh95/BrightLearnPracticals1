@@ -1,0 +1,15 @@
+List all products and orders, showing NULLs where products were never ordered or 
+orders are missing product info.
+
+SELECT 
+  A.ProductID,
+  A.ProductName,
+  A.Price,
+  B.OrderID,
+  B.OrderDate,
+  B.CustomerID,
+   B.Quantity
+FROM 
+  PRODUCTS  A
+FULL OUTER JOIN 
+  ORDERS B ON A.ProductID = B.ProductID;
