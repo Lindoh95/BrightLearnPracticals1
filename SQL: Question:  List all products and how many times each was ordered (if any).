@@ -1,0 +1,13 @@
+Question: 
+List all products and how many times each was ordered (if any).
+
+SELECT 
+  A.ProductID,
+  A.ProductName,
+  COUNT(B.OrderID) AS TotalOrders
+FROM 
+  PRODUCTS A
+LEFT JOIN 
+  ORDERS B ON A.ProductID = B.ProductID
+GROUP BY 
+  A.ProductID, A.ProductName;
