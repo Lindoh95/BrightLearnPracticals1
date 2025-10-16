@@ -1,0 +1,8 @@
+Question: 
+List all customers and orders, showing NULLs where customers have not ordered or 
+where orders have no customer info.
+
+SELECT A.customerid,A.customername,A.country, B.orderid,B.quantity,B.productid,B.orderdate
+  FROM CUSTOMER A
+  FULL JOIN ORDERS B
+  ON A.CUSTOMERID= B.CUSTOMERID
