@@ -1,0 +1,8 @@
+ Which customers have made orders, and include customers even if they have never 
+placed an order
+
+SELECT  A.CUSTOMERID, A.customername, A.country,B.ORDERID,B.QUANTITY,B.ORDERDATE
+  FROM CUSTOMER A
+  LEFT JOIN ORDERS B
+  ON A.CUSTOMERID=B.CUSTOMERID;
+  GROUP BY CUSTOMERNAME;
